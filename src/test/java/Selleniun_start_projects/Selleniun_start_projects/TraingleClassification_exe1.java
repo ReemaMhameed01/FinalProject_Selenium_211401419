@@ -88,6 +88,8 @@ public class TraingleClassification_exe1 {
 		String result= browser.findElements(By.id("triangle-type")).toString();
 		assertNotEquals(result ,expectedResult);
 		browser.close();
+		
+		
 	}
 	
 	
