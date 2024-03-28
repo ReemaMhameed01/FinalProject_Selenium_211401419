@@ -82,4 +82,16 @@ public class root_calculator {
 			assertNotEquals(result ,expectedResult);
 			browser.close(); 	
 	 }
+	 @Test
+		public void Tests6() {
+			browser.findElement(By.name("a")).sendKeys("0");
+			browser.findElement(By.name("b")).sendKeys("12");
+			browser.findElement(By.name("c")).sendKeys("9");
+		    browser.findElement(By.id("calculateButton")).click();
+			String expectedResult = "a cannot be 0";
+			String result= browser.findElements(By.id("calculatorAnswer")).toString();
+			assertNotEquals(result ,expectedResult);
+			browser.close(); 	
+	 }
+	 
 }
