@@ -33,6 +33,15 @@ public class CheckPassword {
 		 browser.close();
 	}
 	@Test
+	public void CheckCorrectPasswordWithChar() {
+		 browser.findElement(By.name("characters")).sendKeys("Lyla*35");
+		 browser.findElement(By.name("validate")).click();
+		 String expectedResult = "Valid Value";
+		 String result= browser.findElements(By.name("validation_message")).toString();
+		 assertNotEquals(result ,expectedResult);
+		 browser.close();
+	}
+	@Test
 	public void CheckShortPassword() {
 		browser.findElement(By.name("characters")).sendKeys("reema");
 		 browser.findElement(By.name("validate")).click();
