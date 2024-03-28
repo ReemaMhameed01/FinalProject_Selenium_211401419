@@ -51,7 +51,7 @@ public class CheckPassword {
 		 browser.close();
 	}
 	@Test
-	public void CheckPasswordWithChar() {
+	public void CheckShortPasswordWithChar() {
 		browser.findElement(By.name("characters")).sendKeys("Rima#12");
 		 browser.findElement(By.name("validate")).click();
 		 String expectedResult = "Invalid Value";
@@ -60,8 +60,8 @@ public class CheckPassword {
 		 browser.close();
 	}
 	@Test
-	public void CheckPasswordWithChar2() {
-		browser.findElement(By.name("characters")).sendKeys("Rima!t4");
+	public void CheckLongPasswordWithChar() {
+		browser.findElement(By.name("characters")).sendKeys("MBijkdRima!t4");
 		 browser.findElement(By.name("validate")).click();
 		 String expectedResult = "Invalid Value";
 		 String result= browser.findElements(By.name("validation_message")).toString();
@@ -78,6 +78,4 @@ public class CheckPassword {
 		 browser.close();
 	}
 	
-	
-
 }
