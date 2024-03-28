@@ -25,7 +25,7 @@ public class CheckPass {
 
 	@Test
 	public void CheckCorrectPassword() {
-		browser.findElement(By.name("characters")).sendKeys("Reema12");
+		 browser.findElement(By.name("characters")).sendKeys("Reema12");
 		 browser.findElement(By.name("validate")).click();
 		 String expectedResult = "Valid Value";
 		 String result= browser.findElements(By.name("validation_message")).toString();
