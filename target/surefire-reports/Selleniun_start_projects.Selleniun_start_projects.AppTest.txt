@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: Selleniun_start_projects.Selleniun_start_projects.AppTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.758 s - in Selleniun_start_projects.Selleniun_start_projects.AppTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.787 s <<< FAILURE! - in Selleniun_start_projects.Selleniun_start_projects.AppTest
+Tests1 on Tests1(Selleniun_start_projects.Selleniun_start_projects.AppTest)(Selleniun_start_projects.Selleniun_start_projects.AppTest)  Time elapsed: 20.976 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/127.0.0.1:18995
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-RI30HEB', ip: '10.10.64.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: FirefoxDriver
+	at Selleniun_start_projects.Selleniun_start_projects.AppTest.setup(AppTest.java:28)
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:18995
+	at Selleniun_start_projects.Selleniun_start_projects.AppTest.setup(AppTest.java:28)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at Selleniun_start_projects.Selleniun_start_projects.AppTest.setup(AppTest.java:28)
+
