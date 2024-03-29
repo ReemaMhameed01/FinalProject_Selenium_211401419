@@ -91,7 +91,9 @@ public class root_calculator {
 			String expectedResult = "a cannot be 0";
 			String result= browser.findElements(By.id("calculatorAnswer")).toString();
 			assertNotEquals(result ,expectedResult);
-			browser.close(); 	
+			browser.close(); 
+			
+			
 	 }
 	 
 }
